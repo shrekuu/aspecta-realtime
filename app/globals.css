@@ -19,3 +19,51 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  /* give external link an arrow at the end */
+  [target='_blank'].link-with-arrow {
+    position: relative;
+    padding-right: 1.7rem;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:hover::after {
+      content: '\2197';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.5rem;
+      color: var(--foreground);
+      font-size: 0.8rem;
+      opacity: 0.5;
+    }
+  }
+}
+
+/* dev-only helpers -- BEGIN */
+.bo1 {
+  outline: 1px dashed deeppink !important;
+}
+.bo2 {
+  outline: 1px dashed rgb(8, 167, 252) !important;
+}
+.bo3 {
+  outline: 1px dashed rgb(255, 204, 0) !important;
+}
+.bd1 {
+  border: 1px solid deeppink !important;
+}
+.bd2 {
+  border: 1px solid rgb(8, 167, 252) !important;
+}
+.bd3 {
+  border: 1px solid rgb(255, 204, 0) !important;
+}
+/* dev-only helpers -- END */
