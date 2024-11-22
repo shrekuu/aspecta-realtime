@@ -224,7 +224,7 @@ export default function Home() {
           <div className="pt-4 text-slate-500">
             Fair Launch Contract:{' '}
             <a
-              href={`https://bscscan.com/address/${fairLaunchBlanceRes}`}
+              href={`https://bscscan.com/address/${fairLaunchAddress}`}
               target="_blank"
               title={`${fairLaunchBlanceRes?.formatted || 0} BNB`}
               className="link-with-arrow hover:text-cyan-500"
