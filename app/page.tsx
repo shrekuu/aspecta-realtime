@@ -22,6 +22,18 @@ type TProject = {
 
 const projects: TProject[] = [
   {
+    name: 'liveart',
+    display_name: 'LiveArt',
+    address: '0xf9521AE0482Fdb271816739a6A6Cb6e3C8699deA',
+    pool_address: '0x437BeeF85ED71587d634d8Fdb93db3103691CB4D',
+    links: {
+      website: 'https://liveart.io/',
+      x: 'https://x.com/LiveArtX',
+      discord: 'https://discord.com/invite/liveart',
+      tg: 'https://t.me/LiveArtX',
+    },
+  },
+  {
     name: 'moongate',
     display_name: 'Moongate',
     address: '0x461Cb9448ea9D720192AFeD38244738E5Da7985A',
