@@ -1,5 +1,31 @@
-import { http, createConfig } from "wagmi";
-import { bsc } from "wagmi/chains";
+import { defineChain } from 'viem';
+import { createConfig, http } from 'wagmi';
+
+export const bsc = defineChain({
+  id: 56,
+  name: 'BNB Smart Chain',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'BNB',
+    symbol: 'BNB',
+  },
+  rpcUrls: {
+    default: { http: ['https://bsc-rpc.publicnode.com', 'https://rpc.ankr.com/bsc'] },
+  },
+  blockExplorers: {
+    default: {
+      name: 'BscScan',
+      url: 'https://bscscan.com',
+      apiUrl: 'https://api.bscscan.com/api',
+    },
+  },
+  contracts: {
+    multicall3: {
+      address: '0xca11bde05977b3631167028862be2a173976ca11',
+      blockCreated: 15921452,
+    },
+  },
+});
 
 export const wagmiConfig = createConfig({
   chains: [bsc],

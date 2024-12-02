@@ -1,5 +1,6 @@
 'use client';
 
+import { AppTooltip } from '@/ui/AppTooltip';
 import { Icon } from '@iconify-icon/react';
 import BigNumber from 'bignumber.js';
 import Image from 'next/image';
@@ -240,9 +241,13 @@ export default function Home() {
               target="_blank"
               title={`${fairLaunchBlanceRes?.formatted || 0} BNB`}
               className="link-with-arrow hover:text-cyan-500"
+              data-tooltip-id="fair_launch_balance_explanation_tooltip_id"
+              data-tooltip-content="Tokens are refunded to users after each fair launch ends."
+              data-tooltip-place="top"
             >
               {!fairLaunchBlanceRes?.formatted ? 0 : BigNumber(fairLaunchBlanceRes?.formatted || 0).toFixed(7)} BNB
             </a>
+            <AppTooltip id="fair_launch_balance_explanation_tooltip_id" />
           </div>
         </div>
 
