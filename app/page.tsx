@@ -23,6 +23,18 @@ type TProject = {
 
 const projects: TProject[] = [
   {
+    name: 'codatta',
+    display_name: 'Codatta',
+    address: '0x24c7ed5F8D5896B9B3Ea294edD2e41dA622eEF93',
+    pool_address: '0x82012CE154108959729BA98F2d65DF809b72eE21',
+    links: {
+      website: 'https://codatta.io/',
+      x: 'https://x.com/codatta_io',
+      discord: 'https://discord.com/invite/YCESVmHEYv',
+      tg: 'https://t.me/codatta_io',
+    },
+  },
+  {
     name: 'liveart',
     display_name: 'LiveArt',
     address: '0xf9521AE0482Fdb271816739a6A6Cb6e3C8699deA',
