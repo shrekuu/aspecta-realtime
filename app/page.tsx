@@ -23,6 +23,17 @@ type TProject = {
 
 const projects: TProject[] = [
   {
+    name: 'junlala',
+    display_name: 'JunLaLa',
+    address: '0x5a3D65C67e6bF2936590eF56736a567C8Ef83C1C',
+    pool_address: '0x02e72278c77874A2aBAe33d57C135956cF32dF59',
+    links: {
+      website: 'https://junlala.network',
+      x: 'https://x.com/JunLaLaltd',
+      tg: 'https://t.me/junlalanews',
+    },
+  },
+  {
     name: 'codatta',
     display_name: 'Codatta',
     address: '0x24c7ed5F8D5896B9B3Ea294edD2e41dA622eEF93',
