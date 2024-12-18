@@ -1,15 +1,11 @@
-import type { NextConfig } from "next";
-
-const isProd = process.env.NODE_ENV === "production";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   reactStrictMode: false,
-  output: "export",
+  output: 'export',
   images: {
     unoptimized: true, // Disable default image optimization
   },
-  assetPrefix: isProd ? "/aspecta-realtime/" : "",
-  basePath: isProd ? "/aspecta-realtime" : "",
   eslint: {
     // disable linting during build phase
     ignoreDuringBuilds: true,
