@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import GitHubRibbon from './_components/GitHubRibbon';
 import './globals.css';
 import Providers from './providers';
 
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Providers>{children}</Providers>
+        <GitHubRibbon />
       </body>
     </html>
   );

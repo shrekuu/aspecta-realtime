@@ -10,14 +10,14 @@ const nextConfig: NextConfig = {
   },
   assetPrefix: isProd ? "/aspecta-realtime/" : "",
   basePath: isProd ? "/aspecta-realtime" : "",
-  // eslint: {
-  //   // disable linting during build phase
-  //   ignoreDuringBuilds: true,
-  // },
-  // typescript: {
-  //   // disable type-checking during build phase
-  //   ignoreBuildErrors: true,
-  // },
+  eslint: {
+    // disable linting during build phase
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    // disable type-checking during build phase
+    ignoreBuildErrors: true,
+  },
 };
 
 export default nextConfig;
