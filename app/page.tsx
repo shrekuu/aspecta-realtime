@@ -23,6 +23,17 @@ type TProject = {
 
 const projects: TProject[] = [
   {
+    name: 'yuliverse',
+    display_name: 'Yuliverse',
+    address: '0x880b5AcDc2fACfaeF9770986E314DBd32999b328',
+    pool_address: '0x42090e082782e1f3Aa438b05AB0742EF8054F667',
+    links: {
+      website: 'https://www.yuliverse.com',
+      x: 'https://x.com/TheYuliverse',
+      discord: 'https://discord.com/invite/yuliverse-official',
+    },
+  },
+  {
     name: 'junlala',
     display_name: 'JunLaLa',
     address: '0x5a3D65C67e6bF2936590eF56736a567C8Ef83C1C',
