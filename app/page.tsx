@@ -23,6 +23,18 @@ type TProject = {
 
 const projects: TProject[] = [
   {
+    name: 'memedisco',
+    display_name: 'MEME DISCO',
+    address: '0x5fCD873764c634e86D964D6004c3Ee3Ad93ce13a',
+    pool_address: '0x446942015bE4983c7414256603E23F7E5Ea8D04e',
+    links: {
+      website: 'https://disco.zkplay.app',
+      x: 'https://x.com/0xMeMeDisco',
+      discord: 'https://discord.com/invite/delphinuslab',
+      tg: 'https://t.me/DelphinusLabOfficial',
+    },
+  },
+  {
     name: 'yuliverse',
     display_name: 'Yuliverse',
     address: '0x880b5AcDc2fACfaeF9770986E314DBd32999b328',
