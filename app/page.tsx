@@ -15,7 +15,7 @@ type TProject = {
   address: Address;
   pool_address: Address;
   links: {
-    website?: string;
+    website: string;
     x?: string;
     discord?: string;
     tg?: string;
@@ -106,6 +106,7 @@ const projects: TProject[] = [
     address: '0x461Cb9448ea9D720192AFeD38244738E5Da7985A',
     pool_address: '0xb13Efac99553301a234Aab3Ee001B69b116d4DCa',
     links: {
+      website: 'https://www.moongate.id/',
       x: 'https://x.com/Moongate',
       discord: 'https://discord.com/invite/moongateofficial',
     },
@@ -242,9 +243,15 @@ const ProjectRow = ({ project }: { project: TProject }) => {
   return (
     <tr>
       <td className="border-b border-slate-100 p-4 pl-8 text-slate-500 dark:border-slate-700 dark:text-slate-400">
-        <a href="https://www.moongate.id" target="_blank" className="link-with-arrow inline-flex items-center gap-2 hover:text-cyan-500">
+        <a href={project.links.website} target="_blank" className="link-with-arrow inline-flex items-center gap-2 hover:text-cyan-500">
           <div className="flex-none rounded bg-slate-200">
-            <Image src={`/images/index/project-logos/${project.client_name}.png`} width={30} height={30} alt={project.display_name} className="rounded" />
+            <Image
+              src={`/images/index/project-logos/${project.client_name}.png`}
+              width={30}
+              height={30}
+              alt={project.display_name}
+              className="rounded"
+            />
           </div>
 
           <div>{project.display_name}</div>
