@@ -24,6 +24,18 @@ type TProject = {
 
 const projects: TProject[] = [
   {
+    name: 'stadium-science',
+    client_name: 'stadium-science',
+    display_name: 'Stadium Science',
+    address: '0xC1B8465AfF2f92a50D7f93F159D982ce28158bd6',
+    pool_address: '0x6da2e53f18F1767b6fDf89b917Ab33832f9A2deE',
+    links: {
+      website: 'https://www.stadium.science/',
+      x: 'https://x.com/StadiumScience_',
+      tg: 'https://t.me/stadiumsci',
+    },
+  },
+  {
     name: 'memedisco',
     client_name: 'memedisco',
     display_name: 'MEME DISCO',
