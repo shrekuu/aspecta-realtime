@@ -24,6 +24,18 @@ type TProject = {
 
 const projects: TProject[] = [
   {
+    name: 'sign',
+    client_name: 'sign',
+    display_name: 'Sign',
+    address: '0x4BdcAbe56CE957CD044437fD07d6364A58Ab4da8',
+    pool_address: '0x98d70dCdF5Ec59811fdc2aA8E7182856705f9C9b',
+    links: {
+      website: 'https://sign.global/',
+      x: 'https://x.com/ethsign',
+      discord: 'https://discord.com/invite/skA5fkqVwT',
+    },
+  },
+  {
     name: 'stadium-science',
     client_name: 'stadium-science',
     display_name: 'Stadium Science',
