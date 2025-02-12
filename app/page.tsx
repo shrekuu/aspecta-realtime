@@ -24,6 +24,32 @@ type TProject = {
 
 const projects: TProject[] = [
   {
+    name: 'pell_network',
+    client_name: 'pell_network',
+    display_name: 'Pell Network',
+    address: '0x63509Cc21c3B4E519E7F3fbB10e9af678E05816B',
+    pool_address: '0xEE43D72A3718b060A1D4307f560928d0795F3407',
+    links: {
+      website: 'https://pell.network/',
+      x: 'https://x.com/Pell_Network',
+      discord: 'https://discord.com/invite/pell-network',
+      tg: 'https://t.me/Pell_Network',
+    },
+  },
+  {
+    name: 'glayer',
+    client_name: 'glayer',
+    display_name: 'GLayer',
+    address: '0x5dB0c946b3Ef30Abe276bd472Bfa32dF7b8c27a4',
+    pool_address: '0x8ec5A589166c619A791D542392470C86d2719327',
+    links: {
+      website: 'https://gravitylayer.ai/',
+      x: 'https://x.com/glayer_official',
+      discord: '',
+      tg: 'https://t.me/officialglayer',
+    },
+  },
+  {
     name: 'sign',
     client_name: 'sign',
     display_name: 'Sign',
